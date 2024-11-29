@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.btn {
+    border-radius: 2px;
+    background-color:rgb(255, 178, 213);
+    color: #ff00aa;
+    border-color:rgb(255, 255, 255);
+    font-family: 'Caveat', cursive , "Nico Moji","HG丸ｺﾞｼｯｸM-PRO";
+    font-weight:bold;
+}
+
+a{
+    color: rgb(255, 93, 123);
+    font-family: 'Caveat', cursive, "Nico Moji","HG丸ｺﾞｼｯｸM-PRO";
+    font-size: 20px;
+    font-weight:bold;
+  }
+
+body {
+    background-color:rgb(255, 239, 253);
+    }
+#navbarHeader {
+    background-color:rgb(247, 141, 206);
+    font-family: 'Caveat', cursive, "Nico Moji","HG丸ｺﾞｼｯｸM-PRO";
+    font-weight:bold;
+    }
+h4 {
+    color: #ff6ce6;
+    font-family: 'Caveat', cursive, "Nico Moji","HG丸ｺﾞｼｯｸM-PRO";
+    font-size:  30px;
+    font-weight:bold;
+}        
+
+h1{
+    font-family: 'Caveat', cursive, "Nico Moji","HG丸ｺﾞｼｯｸM-PRO";
+    font-weight:bold;
+}
+
+p{
+    font-family: 'Caveat', cursive, "Nico Moji","HG丸ｺﾞｼｯｸM-PRO";
+    font-weight:bold;
+}
+

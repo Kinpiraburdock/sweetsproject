@@ -1,0 +1,28 @@
+  <!-- タイトルとナビゲーションボタン -->
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <!-- タイトルと本文 -->
+        <h1 class="fw-light">Sweet Love</h1>
+        <p class="lead text-muted">
+          自分の好きなスイーツのレシピを投稿しよう♡
+          自分の好きなレシピを探すこともできるよ♡
+        </p>
+        <p>
+          {% if user.is_authenticated %}
+          <div class="d-flex justify-content-center">
+            <a href="{% url 'sweet:post' %}" class="btn btn-secondary my-2 me-2">♡投稿する♡</a>
+            <form action="{% url 'accounts:logout' %}" method="POST" class="my-2">
+              {% csrf_token %}
+              <button type="submit" class="btn btn-secondary">♡LOG OUT♡</button>
+            </form>
+            </div>
+          {% else %}
+          <!-- ナビゲーションボタン -->
+          <a href="{% url 'accounts:signup' %}"class="btn btn-primary my-2">♡SIGN UP NOW♡</a>
+          <a href="{% url 'accounts:login'%}" class="btn btn-secondary my-2">♡LOG IN♡</a>
+          {% endif %}
+        </p>
+      </div>
+    </div>
+  </section>

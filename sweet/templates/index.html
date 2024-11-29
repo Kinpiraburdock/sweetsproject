@@ -1,0 +1,15 @@
+<!-- ベーステンプレートを適用する -->
+{% extends 'base.html' %}
+<!-- ヘッダー情報のページタイトルを設定する -->
+{% block title %}Sweet Love{% endblock %}
+
+      {% block contents %}
+      
+
+      {% include "sweets_title.html" %}
+      
+      {% include "sweets_list.html" %}
+
+      {% include "pagination.html" %}
+      
+      {% endblock %}
